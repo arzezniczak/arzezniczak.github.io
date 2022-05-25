@@ -4,14 +4,6 @@ function setValues() {
 }
 
 function showHideMenu() {
-    // if (document.getElementById("interaction-menu").style.visibility == "") {
-    //     document.getElementById("interaction-menu").style.visibility = "hidden";
-    //     document.getElementById("menu-show-hide-button").innerHTML = "➡";
-    // }
-    // else {
-    //     document.getElementById("interaction-menu").style.visibility = "";
-    //     document.getElementById("menu-show-hide-button").innerHTML = "⬅";
-    // }
     if (window.getComputedStyle(document.getElementById("interaction-menu")).left == "10px") {
         document.getElementById("interaction-menu").style.left = "-300px";
         document.getElementById("menu-show-hide-button").innerHTML = "➡";
@@ -39,7 +31,7 @@ function addItem() {
     itemDiv.appendChild(itemHeader);
 
     var itemImg = document.createElement("img");
-    itemImg.setAttribute("src", "img/tel.jpg");
+    itemImg.setAttribute("src", "tel.jpg");
     itemImg.setAttribute("alt", "telefon");
     itemDiv.appendChild(itemImg);
 
