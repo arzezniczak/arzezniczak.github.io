@@ -1,0 +1,33 @@
+/*body style*/
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: lightcyan;
+    font-family: monospace;
+}
+input { /*Input fields usually have their own style set in browser’s default style sheet.*/
+    font-family: monospace;
+}
+#shop-name-editable {
+    text-align: center;
+}
+#shop-description-editable {
+    text-align: center;
+}
+#items-container-editable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item-editable {
+    background-color: #f1f1f1;
+    width: auto;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+/**/

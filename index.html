@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Easy Store</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="interaction-menu-style.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <!-- interaction menu -->
+        <div id="interaction-menu">
+
+            <!-- controls -->
+            <label>Nazwa:</label>
+            <input type="text" id="shop-name-input" title="Chwytliwa nazwa Twojego prostego sklepu">
+
+            <label>Opis:</label>
+            <textarea id="shop-description-input" title="Krótki opis Twojego prostego sklepu" rows="3" cols="20"></textarea>
+
+            <input type="button" class="menu-inside-button" value="Ustaw" onclick="setValues()">
+
+            <div id="menu-horizontal-separator"></div>
+
+            <label>Przedmiot:</label>
+            <input type="text" id="item-name-input" title="Nazwa przedmiotu do sprzedania">
+
+            <label>Opis:</label>
+            <input type="text" id="item-description-input" title="Nazwa przedmiotu do sprzedania">
+
+            <input type="button" class="menu-inside-button" value="Dodaj przedmiot" onclick="addItem()">
+        </div>
+
+        <!-- editable name -->
+        <h1 id="shop-name-editable">Hello EasyStore.pl! 🛒🚀</h1>
+        <br>
+        <!-- editable description -->
+        <p id="shop-description-editable">To jest przykładowa strona wygenerowana przez EasyStore.pl!</p>
+        <br>
+        <!-- editable items to sell -->
+        <div id="items-container-editable">
+            <div class="item-editable" id="item1-editable">
+                <h5>Przedmiot 1</h5>
+                <img src="img/tel.jpg" alt="telefon"/>
+            </div>
+        </div>
+
+        <!-- show/hide menu button (as last element to draw above everything) -->
+        <div id="menu-show-hide-button" onclick="showHideMenu()">
+            ⬅
+        </div>
+    </body>
+</html>
